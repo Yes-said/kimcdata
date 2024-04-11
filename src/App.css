@@ -33,3 +33,88 @@
 .read-the-docs {
   color: #888;
 }
+
+/* Custom styles for Sidebar component */
+.menu-container {
+  background-color:#0ABAB5; /* Light blue background color */
+  padding: 20px; /* Add padding for content spacing */
+  height: 100vh; /* Set full height of the sidebar */
+}
+
+@media screen and (max-width: 1023px) {
+  /* Responsive styles for smaller screens */
+  .menu.is-hidden-touch {
+    display: none; /* Hide sidebar on touch devices (small screens) */
+  }
+}
+
+/* Sidebar.css */
+
+.custom-sidebar {
+  position: fixed;
+  top: 50%; /* Position at the middle of the viewport vertically */
+  left: 0;
+  transform: translateY(-50%);
+  height: 80vh; /* Set height to 80% of viewport height */
+  width: 200px; /* Set a fixed width for the sidebar */
+  background-color: #f5f5f5; /* Light background color */
+  border-right: 1px solid #ccc; /* Add a border on the right side */
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+
+  /* Media query for responsiveness */
+  @media (max-width: 1024px) {
+    width: 150px; /* Adjust width for smaller screens */
+  }
+  
+  @media (max-width: 768px) {
+    display: none; /* Hide sidebar on touch devices */
+  }
+}
+
+.menu-container {
+  width: 100%; /* Full width of sidebar */
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.menu-label {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.menu-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.menu-list li {
+  margin-bottom: 10px;
+}
+
+.menu-list li a {
+  text-decoration: none;
+  color: #333;
+  transition: color 0.3s ease;
+}
+
+.menu-list li a:hover {
+  color: #007bff;
+}
+
+/* Sidebar.css */
+
+.sidebar-item {
+  display: block;
+  padding: 10px 20px; /* Adjust padding as needed */
+  color: inherit; /* Inherit text color */
+  text-decoration: none; /* Remove underline */
+}
+
+.sidebar-item:hover {
+  background-color: #f0f0f0; /* Hover background color */
+}

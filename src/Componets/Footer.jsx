@@ -49,7 +49,7 @@ const Footer = () => {
       <style jsx>{`
         .footer {
           position: relative;
-          bottom: -800px;
+          bottom: -450px;
           width: 100%;
           margin-top: auto;
         }
